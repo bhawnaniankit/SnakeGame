@@ -30,6 +30,4 @@ else:
     score_board.highScore()
     score_board.game_over()
         
-    
-
 screen.exitonclick()   
