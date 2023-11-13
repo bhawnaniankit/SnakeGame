@@ -7,7 +7,7 @@ class ScoreBoard(Turtle):
         self.penup()
         self.score=0
         self.current_hs=0
-        with open(r"C:\Coding\Python\PRACTISE\UdemyCouse\SnakeGame\highScore.txt") as hs:
+        with open(r".\highScore.txt") as hs:
             self.current_hs=hs.read()
             
         self.text=f"Score: {self.score}   High Score: {self.current_hs}"
@@ -31,5 +31,5 @@ class ScoreBoard(Turtle):
         
     def highScore(self):
         if(self.score > int(self.current_hs)):
-            with open(r"C:\Coding\Python\PRACTISE\UdemyCouse\SnakeGame\highScore.txt","w") as hs:
+            with open(r".\highScore.txt","w") as hs:
                 hs.write(f"{self.score}")
