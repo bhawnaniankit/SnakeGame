@@ -27,6 +27,7 @@ while snake1.alive:
         score_board.Score_update()
         snake1.add_seg()
 else:
+    score_board.highScore()
     score_board.game_over()
         
     
